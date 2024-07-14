@@ -13,7 +13,66 @@
     .main-btn{
         font-size: .875rem;
     }
+
+    /* banner */
+
+    .carousel-caption h5{
+        margin-top: 50px;
+    }
+
+    /* booking area */
+
+    .booking-area{
+        padding: 3rem .625rem;
+    }
     
+    .booking-area .main-btn{
+        padding-left: .3125rem !important;
+        padding-right: .3125rem !important;
+    }
+
+
+     /* rooms */
+
+     .room-items .room-content{
+        padding: 1rem 1.875rem;
+     }
+
+     .room-items .room-content h5{
+        font-size: 1.5rem;
+     }
+     .room-items .room-content p{
+        font-size: 0.75rem;
+     }
+
+
+     /* services */
+
+     .service-item-wrap .tab-content img{
+        width: 100%;
+     }
+
+     .service-menu-area ul li a{
+        margin-bottom: .8125rem;
+        overflow: hidden;
+     }
+
+     .service-menu-area ul li:nth-child(1){
+        margin-left: -4.4375rem;
+     }
+     .service-menu-area ul li:nth-child(2){
+        margin-left: -6.9375rem;
+     }
+     .service-menu-area ul li:nth-child(3){
+        margin-left: -9.375rem;
+     }
+     .service-menu-area ul li:nth-child(4){
+        margin-left: -12.8125rem;
+     }
+
+     .service-menu-area ul li a h5{
+        margin-bottom: .375rem;
+     }
 }
 
 @media (max-width: 991px) {
@@ -36,7 +95,46 @@
     .header_wrapper .nav-item .nav-link{
         margin-top: .9375rem;
     }
+
+    /* banner */
+
+    .carousel{
+        height: 25.625rem;
+    }
+     .booking-area{
+        padding: 3.125rem 1.875rem;
+     }
+
+     /* about */
+     .about_wrapper{
+        padding-top: 22.375rem;
+     }
+
+
+      /* rooms */
+
+      .room-items .room-content{
+        padding: 2rem 1.875rem;
+     }
+
+     .room-items .room-content h5{
+        font-size: 1.5rem;
+     }
+     .room-items .room-content p{
+        font-size: 1rem;
+     }
     
+
+
+     /* services */
+
+     .service-menu-area{
+        padding: 1.5rem 0.5rem;
+     }
+
+     .service-menu-area ul li{
+        margin-left: unset !important;
+     }
 }
 
 
