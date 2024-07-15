@@ -56,3 +56,28 @@ document.addEventListener("DOMContentLoaded", () =>{
     counter("count3", 0, 1230, 2100);
     counter("count4", 0, 4190, 4450);
 });
+
+
+// bottom swiper
+$(document).ready(function(){
+    $('.swiper-wrapper').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});

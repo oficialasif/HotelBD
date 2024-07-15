@@ -156,5 +156,18 @@
         font-size: .8125rem;
         line-height: 1.5rem;
     }
+
+    /* blog */
+
+    .blog_wrapper .blog-content{
+        margin: 0;
+    }
+
+
+    /* footer */
+
+    .footer-wrapper >div{
+        padding: 0 1.875rem;
+    }
     
 }

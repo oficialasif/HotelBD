@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Booking</title>
 
+    <!-- Online for swiper bottom -->
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
 
     <!-- bootstrap 5 -->
     <link
@@ -26,14 +38,17 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- custom css -->
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive-style.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-
-
     <!-- nav -->
 
     <header class="header_wrapper">
@@ -97,114 +112,164 @@
       </nav>
     </header>
 
-
     <!-- banner -->
 
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/slider/slider1.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-flex flex-column h-100 align-items-center ">
-              <h5>Welcome to HOTEl BD</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slider/slider2.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-flex flex-column h-100 align-items-center ">
-              <h5>Welcome to HOTEl BD</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slider/slider1.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-flex flex-column h-100 align-items-center ">
-              <h5>Welcome to HOTEl BD</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-
-        <div class="container booking-area">
-
-            <form class="row">
-                <div class="col-lg mb-3 mb-lg-0">
-                 <input type="date" class="form-control" placeholder="Date">   
-                </div>
-                <div class="col-lg mb-3 mb-lg-0">
-                 <input type="date" class="form-control" placeholder="Date">   
-                </div>
-                <div class="col-lg mb-3 mb-lg-0">
-                 <select name="" id="" class="form-select">
-                  <option value="selected">Adults</option>  
-                  <option value="1">1</option>  
-                  <option value="2">2</option>  
-                  <option value="3">3</option>  
-                  <option value="4">4</option>  
-                  <option value="5">5</option>  
-                  <option value="6">6</option>  
-                 </select>
-                </div>
-                <div class="col-lg mb-3 mb-lg-0">
-                 <select name="" id="" class="form-select">
-                  <option value="selected">Children</option>  
-                  <option value="1">1</option>  
-                  <option value="2">2</option>  
-                  <option value="3">3</option>  
-                  <option value="4">4</option>  
-                  <option value="5">5</option>  
-                  <option value="6">6</option>  
-                 </select>
-                </div>
-
-                <div class="col-lg mb-3 mb-lg-0">
-                    <button type="submit" class="main-btn rounded-2 px-lg-3"> Check Availability</button>
-                </div>
-            </form>
-
-        </div>
-
-
-
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/slider/slider1.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center"
+          >
+            <h5>Welcome to HOTEl BD</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/slider/slider2.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center"
+          >
+            <h5>Welcome to HOTEl BD</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/slider/slider1.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-flex flex-column h-100 align-items-center"
+          >
+            <h5>Welcome to HOTEl BD</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="container booking-area">
+        <form class="row">
+          <div class="col-lg mb-3 mb-lg-0">
+            <input type="date" class="form-control" placeholder="Date" />
+          </div>
+          <div class="col-lg mb-3 mb-lg-0">
+            <input type="date" class="form-control" placeholder="Date" />
+          </div>
+          <div class="col-lg mb-3 mb-lg-0">
+            <select name="" id="" class="form-select">
+              <option value="selected">Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div class="col-lg mb-3 mb-lg-0">
+            <select name="" id="" class="form-select">
+              <option value="selected">Children</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+
+          <div class="col-lg mb-3 mb-lg-0">
+            <button type="submit" class="main-btn rounded-2 px-lg-3">
+              Check Availability
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- about -->
 
-      <section id="about" class="about_wrapper">
-        <div class="container">
-          <div class="row flex-lg-row flex-column-reverse">
-            <div class="col-lg-6 text-center text-lg-start">
-              <h3>Welcome to <span>Hotel <br class="d-none d-lg-block">the heaven</span> of your weekend</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, exercitationem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum vero natus ea, excepturi expedita?</p>
+    <section id="about" class="about_wrapper">
+      <div class="container">
+        <div class="row flex-lg-row flex-column-reverse">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h3>
+              Welcome to
+              <span>Hotel <br class="d-none d-lg-block" />the heaven</span> of
+              your weekend
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+              tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, exercitationem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              ipsum vero natus ea, excepturi expedita?
+            </p>
             <a href="#" class="main-btn mt-4">Explore</a>
-            </div>
+          </div>
 
-            <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-0 text-center">
-              <img src="./images/about-img.svg" class="img-fluid" alt="">
-            </div>
-            
+          <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-0 text-center">
+            <img src="./images/about-img.svg" class="img-fluid" alt="" />
           </div>
         </div>
-      </section>
-
-
-
+      </div>
+    </section>
 
     <!-- rooms -->
 
@@ -218,16 +283,23 @@
         </div>
 
         <div class="row m-0">
-
           <div class="col-md-4 mb-4 mb-lg-0">
             <div class="room-items">
-              <img src="./images/room/room1.webp" class="img-fluid" alt="">
+              <img src="./images/room/room1.webp" class="img-fluid" alt="" />
               <div class="room-item-wrap">
                 <div class="room-content">
-                  <h5 class="text-white mb-lg-5 text-decoration-underline">Five Star</h5>
-                  <p class="text-white">Discover fiv of our favourite dresses from our new collection that are destined to the worn and loved immediately</p>
+                  <h5 class="text-white mb-lg-5 text-decoration-underline">
+                    Five Star
+                  </h5>
+                  <p class="text-white">
+                    Discover fiv of our favourite dresses from our new
+                    collection that are destined to the worn and loved
+                    immediately
+                  </p>
                   <p class="text-white fw-bold mt-lg-4">$200/Night</p>
-                  <a href="#" class="main-btn border-white text-white mt-lg-5">Book Now</a>
+                  <a href="#" class="main-btn border-white text-white mt-lg-5"
+                    >Book Now</a
+                  >
                 </div>
               </div>
             </div>
@@ -235,13 +307,21 @@
 
           <div class="col-md-4 mb-4 mb-lg-0">
             <div class="room-items">
-              <img src="./images/room/room2.webp" class="img-fluid" alt="">
+              <img src="./images/room/room2.webp" class="img-fluid" alt="" />
               <div class="room-item-wrap">
                 <div class="room-content">
-                  <h5 class="text-white mb-lg-5 text-decoration-underline">Five Star</h5>
-                  <p class="text-white">Discover fiv of our favourite dresses from our new collection that are destined to the worn and loved immediately</p>
+                  <h5 class="text-white mb-lg-5 text-decoration-underline">
+                    Five Star
+                  </h5>
+                  <p class="text-white">
+                    Discover fiv of our favourite dresses from our new
+                    collection that are destined to the worn and loved
+                    immediately
+                  </p>
                   <p class="text-white fw-bold mt-lg-4">$200/Night</p>
-                  <a href="#" class="main-btn border-white text-white mt-lg-5">Book Now</a>
+                  <a href="#" class="main-btn border-white text-white mt-lg-5"
+                    >Book Now</a
+                  >
                 </div>
               </div>
             </div>
@@ -249,23 +329,28 @@
 
           <div class="col-md-4 mb-4 mb-lg-0">
             <div class="room-items">
-              <img src="./images/room/room3.webp" class="img-fluid" alt="">
+              <img src="./images/room/room3.webp" class="img-fluid" alt="" />
               <div class="room-item-wrap">
                 <div class="room-content">
-                  <h5 class="text-white mb-lg-5 text-decoration-underline">Five Star</h5>
-                  <p class="text-white">Discover fiv of our favourite dresses from our new collection that are destined to the worn and loved immediately</p>
+                  <h5 class="text-white mb-lg-5 text-decoration-underline">
+                    Five Star
+                  </h5>
+                  <p class="text-white">
+                    Discover fiv of our favourite dresses from our new
+                    collection that are destined to the worn and loved
+                    immediately
+                  </p>
                   <p class="text-white fw-bold mt-lg-4">$200/Night</p>
-                  <a href="#" class="main-btn border-white text-white mt-lg-5">Book Now</a>
+                  <a href="#" class="main-btn border-white text-white mt-lg-5"
+                    >Book Now</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
-
 
     <!-- service -->
 
@@ -273,10 +358,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 section-title text-center mb-5">
-
             <h6>we are here for you</h6>
             <h3>Our awesome services</h3>
-
           </div>
         </div>
 
@@ -284,137 +367,530 @@
           <div class="col-lg-7 p-lg-0">
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="spa" role="tabpanel">
-                <img src="./images/services/service1.webp" alt="">
+                <img src="./images/services/service1.webp" alt="" />
               </div>
               <div class="tab-pane fade" id="restuarant" role="tabpanel">
-                <img src="./images/services/service2.webp" alt="">
+                <img src="./images/services/service2.webp" alt="" />
               </div>
               <div class="tab-pane fade" id="swimming" role="tabpanel">
-                <img src="./images/services/service3.webp" alt="">
+                <img src="./images/services/service3.webp" alt="" />
               </div>
               <div class="tab-pane fade" id="conference" role="tabpanel">
-                <img src="./images/services/service6.webp" alt="">
+                <img src="./images/services/service6.webp" alt="" />
               </div>
             </div>
           </div>
 
           <div class="col-lg-5 position-relative">
             <div class="service-menu-area">
-
               <ul class="nav">
                 <li>
                   <a data-bs-toggle="tab" href="#spa" class="active">
                     <span class="service-icon">
-                      <img src="./images/services/service-icon1.webp" alt="">
+                      <img src="./images/services/service-icon1.webp" alt="" />
                     </span>
                     <h5>Spa, beauty & health</h5>
-                    <p><span>Spa and Beauty</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas.</p>
+                    <p>
+                      <span>Spa and Beauty</span>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Voluptas.
+                    </p>
                   </a>
                 </li>
 
                 <li>
                   <a data-bs-toggle="tab" href="#restaurent">
                     <span class="service-icon">
-                      <img src="./images/services/service-icon2.webp" alt="">
+                      <img src="./images/services/service-icon2.webp" alt="" />
                     </span>
                     <h5>Restaurant</h5>
-                    <p><span>Spa and Beauty</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas.</p>
+                    <p>
+                      <span>Spa and Beauty</span>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Voluptas.
+                    </p>
                   </a>
                 </li>
 
                 <li>
                   <a data-bs-toggle="tab" href="#swimming">
                     <span class="service-icon">
-                      <img src="./images/services/service-icon3.webp" alt="">
+                      <img src="./images/services/service-icon3.webp" alt="" />
                     </span>
                     <h5>Swimming Pool</h5>
-                    <p><span>Spa and Beauty</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas.</p>
+                    <p>
+                      <span>Spa and Beauty</span>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Voluptas.
+                    </p>
                   </a>
                 </li>
-
 
                 <li>
                   <a data-bs-toggle="tab" href="#conference">
                     <span class="service-icon">
-                      <img src="./images/services/service-icon1.webp" alt="">
+                      <img src="./images/services/service-icon1.webp" alt="" />
                     </span>
                     <h5>Conference</h5>
-                    <p><span>Spa and Beauty</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas.</p>
+                    <p>
+                      <span>Spa and Beauty</span>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Voluptas.
+                    </p>
                   </a>
                 </li>
-
               </ul>
-
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="counter mt-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 mb-lg-0 mb-5">
+              <h1><span id="count1"> </span>+</h1>
+              <p>Happy Clients</p>
+            </div>
+            <div class="col-md-3 mb-lg-0 mb-5">
+              <h1><span id="count2"> </span>+</h1>
+              <p>New Friendships</p>
+            </div>
+
+            <div class="col-md-3 mb-lg-0 mb-5">
+              <h1><span id="count3"> </span>+</h1>
+              <p>Five Star Ratings</p>
+            </div>
+
+            <div class="col-md-3 mb-lg-0 mb-5">
+              <h1><span id="count4"> </span>+</h1>
+              <p>Served Breakfast</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="counter mt-5">
+    <!-- team -->
+
+    <section id="team" class="team_wrapper">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-md-3 mb-lg-0 mb-5">
-            <h1>
-              <span id="count1">
-
-              </span>+
-            </h1>
-            <p>Happy Clients</p>
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h6>What I can do for you</h6>
+            <h3>Our speacial staff</h3>
           </div>
-          <div class="col-md-3 mb-lg-0 mb-5">
-            <h1>
-              <span id="count2">
+        </div>
 
-              </span>+
-            </h1>
-            <p>New Friendships</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0 rounded-3">
+              <img src="./images/team/team1.webp" alt="" />
+              <div class="team-info">
+                <h5>Jon Snow</h5>
+                <p>Manager</p>
+                <ul class="social-network">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-          <div class="col-md-3 mb-lg-0 mb-5">
-            <h1>
-              <span id="count3">
-
-              </span>+
-            </h1>
-            <p>Five Star Ratings</p>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0 rounded-3">
+              <img src="./images/team/team2.webp" alt="" />
+              <div class="team-info">
+                <h5>Jon Snow</h5>
+                <p>Manager</p>
+                <ul class="social-network">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-          <div class="col-md-3 mb-lg-0 mb-5">
-            <h1>
-              <span id="count4">
-
-              </span>+
-            </h1>
-            <p>Served Breakfast</p>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0 rounded-3">
+              <img src="./images/team/team3.webp" alt="" />
+              <div class="team-info">
+                <h5>Jon Snow</h5>
+                <p>Manager</p>
+                <ul class="social-network">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0 rounded-3">
+              <img src="./images/team/team4.webp" alt="" />
+              <div class="team-info">
+                <h5>Jon Snow</h5>
+                <p>Manager</p>
+                <ul class="social-network">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-
-    <!-- team -->
-
+    </section>
 
     <!-- gallery -->
 
+    <section id="gallery" class="gallery_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h6>Best Capture of our Hotel</h6>
+            <h3>Our Gallery</h3>
+          </div>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-6 gallery-item">
+            <img src="./images/gallery/1.webp" class="img-fluid w-100" alt="" />
+            <div class="gallery-item-content"></div>
+          </div>
+          <div class="col-lg-3 col-md-6 gallery-item">
+            <img src="./images/gallery/2.webp" class="img-fluid w-100" alt="" />
+            <div class="gallery-item-content"></div>
+          </div>
+          <div class="col-lg-3 col-md-6 gallery-item">
+            <img src="./images/gallery/3.webp" class="img-fluid w-100" alt="" />
+            <div class="gallery-item-content"></div>
+          </div>
+          <div class="col-lg-3 col-md-6 gallery-item">
+            <img src="./images/gallery/4.webp" class="img-fluid w-100" alt="" />
+            <div class="gallery-item-content"></div>
+          </div>
+          <div class="col-md-6 gallery-item">
+            <img src="./images/gallery/5.webp" class="img-fluid w-100" alt="" />
+            <div class="gallery-item-content"></div>
+          </div>
+          <div class="col-md-6 gallery-item">
+            <img src="./images/gallery/6.webp" class="img-fluid w-100" alt="" />
+            <div class="gallery-item-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- pricing -->
 
+    <section id="price" class="price_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h6>Affordable price for you</h6>
+            <h3>Our Pricing</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-center rounded-3">
+              <h5 class="text-decoraton-underline mb-4">Economic</h5>
+              <ul class="list-unstyled">
+                <li><p>Flight Ticket(2)</p></li>
+                <li><p>Music Concert (30% Off)</p></li>
+                <li><p>Restaurant (Snacks)</p></li>
+                <li><p>Face Make(No)</p></li>
+              </ul>
+              <hr />
+              <h3>$200 <sup class="fs-6 fw-normal">/Night</sup></h3>
+              <a href="#" class="main-btn">Sign Up</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-center rounded-3">
+              <h5 class="text-decoraton-underline mb-4">Economic</h5>
+              <ul class="list-unstyled">
+                <li><p>Flight Ticket(2)</p></li>
+                <li><p>Music Concert (30% Off)</p></li>
+                <li><p>Restaurant (Snacks)</p></li>
+                <li><p>Face Make(No)</p></li>
+              </ul>
+              <hr />
+              <h3>$200 <sup class="fs-6 fw-normal">/Night</sup></h3>
+              <a href="#" class="main-btn">Sign Up</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-center rounded-3">
+              <h5 class="text-decoraton-underline mb-4">Economic</h5>
+              <ul class="list-unstyled">
+                <li><p>Flight Ticket(2)</p></li>
+                <li><p>Music Concert (30% Off)</p></li>
+                <li><p>Restaurant (Snacks)</p></li>
+                <li><p>Face Make(No)</p></li>
+              </ul>
+              <hr />
+              <h3>$200 <sup class="fs-6 fw-normal">/Night</sup></h3>
+              <a href="#" class="main-btn">Sign Up</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-4 text-center rounded-3">
+              <h5 class="text-decoraton-underline mb-4">Economic</h5>
+              <ul class="list-unstyled">
+                <li><p>Flight Ticket(2)</p></li>
+                <li><p>Music Concert (30% Off)</p></li>
+                <li><p>Restaurant (Snacks)</p></li>
+                <li><p>Face Make(No)</p></li>
+              </ul>
+              <hr />
+              <h3>$200 <sup class="fs-6 fw-normal">/Night</sup></h3>
+              <a href="#" class="main-btn">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- blog -->
 
+    <section id="blog" class="blog_wrapper pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h6>Say hello to our visitor</h6>
+            <h3>Our Blog</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card p-0 border-0 rounded-0">
+              <img src="./images/blog/blog1.webp" alt="" />
+              <div class="blog-content bg-white p-4">
+                <h5 class="text-decoration-underline">Relax zone</h5>
+                <h6>By Admin - July 14, 2024</h6>
+                <p class="mt-2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum, dolore?
+                </p>
+                <a href="#" class="main-btn mt-2">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card p-0 border-0 rounded-0">
+              <img src="./images/blog/blog1.webp" alt="" />
+              <div class="blog-content bg-white p-4">
+                <h5 class="text-decoration-underline">Relax zone</h5>
+                <h6>By Admin - July 14, 2024</h6>
+                <p class="mt-2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum, dolore?
+                </p>
+                <a href="#" class="main-btn mt-2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-partner-slider mt-5">
+        <div class="container swiper our-partner"></div>
+        <div class="swiper-wrapper">
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img src="http://www.webcoderskull.com/img/logo.png" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"
+            />
+          </div>
+          <!-- <div class="swiper-slide">
+            <img src="./images/partners/brand1.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/partners/brand2.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/partners/brand3.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/partners/brand4.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/partners/brand5.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/partners/brand6.webp" alt="" />
+          </div> -->
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
 
+    <section id="contact" class="footer-wrapper mt-3 mt-md-0 pb-0">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <h5>Hotel Location</h5>
+            <p class="ps-0">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laudantium, qui.
+            </p>
+            <div class="contact-info">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-home me-3"></i>Savar, Dhaka, Bangladesh</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-phone me-3"></i>+8803575437</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-envelope me-3"></i>gggg@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>More Links</h5>
+            <ul class="link-widget p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Office</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Guarantee</a></li>
+              <li><a href="#">Gift card</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>More Links</h5>
+            <ul class="link-widget p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Office</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Guarantee</a></li>
+              <li><a href="#">Gift card</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>newsletter</h5>
+            <div class="form-group mb-4">
+
+              <input type="email" class="form-control bg-transparent" placeholder="Enter your email here">
+              <button class="main-btn rounded-2 mt-3 border-white text-white" type="submit">Subscribe</button>
+            </div>
+
+          <h5>Stay Connected</h5>
+            <ul class="social-network d-flex align-items-center p-0">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+              
+            </ul>
+
+            </div>
+
+
+        </div>
+      </div>
+
+      <div class="container-fluid copyright-section">
+        <p>Copyright <a href="https://www.linkedin.com/in/oficialasif/">	&copy;OficialAsif.</a> All rights reserved-2024.</p>
+      </div>
+
+    </section>
 
     <!-- bootstrap 5 js -->
     <script src="https://cdnjs.cloudflare.com/ajax/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 
     <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
