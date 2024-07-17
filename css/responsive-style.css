@@ -16,8 +16,14 @@
 
     /* banner */
 
+    .carousel-item img{
+        width: 100%;
+        height: 70vh;
+    }
+
     .carousel-caption h5{
         margin-top: 50px;
+        font-weight: 800;
     }
 
     /* booking area */
@@ -76,6 +82,16 @@
 }
 
 @media (max-width: 991px) {
+
+
+    .carousel-item img{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .carousel-item h5{
+        font-weight: 800;
+    }
 
     section{
         padding: 1.875rem 0;
@@ -139,6 +155,19 @@
 
 
 @media (max-width: 767px) {
+
+
+    .carousel-item img{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .carousel-item h5{
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+
+   
 
     h1{
         font-size: 1.875rem;
